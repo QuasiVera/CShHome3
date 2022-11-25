@@ -8,6 +8,15 @@ MethodCube(N);
 //-------------Таблица кубов
 void MethodCube(int Number)
 {
+    if(Number<0) 
+    {
+        //Number=Number*(-1);
+        for(int i = -1; i>= Number; i--)
+        {
+        Console.WriteLine($"{i}^3 = {i*i*i}");
+        }
+    }
+    
     for(int i = 1; i<= Number; i++)
     {
     Console.WriteLine($"{i}^3 = {i*i*i}");
